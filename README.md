@@ -7,6 +7,27 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
     yarn install rn-stor
 
 
+### API
+
+``` JS
+
+  // * Create Store
+  new ListStor(<StoreName>, <Config>);
+  
+  // example
+  const list = new new ListStor('List');
+  
+  // İnsert
+  list.insert({ key: 'value' })
+  
+  // Get List
+  list.fetch() // [ { _id: '3b99e3e0-7598-11e8-90be-95472fb3ecbd', key: 'value' } ]
+  
+  // Remove İtem
+  list.remove('3b99e3e0-7598-11e8-90be-95472fb3ecbd') // _id
+```
+
+
 ### Simple List Example
 
 ``` JS 
@@ -48,6 +69,3 @@ class Messages extends Component {
 }
 
 ```
-### API
-
-* 
