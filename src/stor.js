@@ -19,7 +19,7 @@ export default class Stor {
 
   async get() {
     const item = await AsyncStorage.getItem(this.name);
-    
+
     if (item) {
       return JSON.parse(item);
     }
@@ -27,7 +27,7 @@ export default class Stor {
     return null;
   }
 
-	set(doc) {
+  set(doc) {
     return AsyncStorage.setItem(this.name, this.stringify(doc));
   }
 
