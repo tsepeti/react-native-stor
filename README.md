@@ -15,7 +15,7 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
   new ListStor(<StoreName>, <Config>);
   
   // example
-  const list = new new ListStor('List');
+  const list = new ListStor('List');
   
   // İnsert
   list.insert({ key: 'value' })
