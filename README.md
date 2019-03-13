@@ -9,6 +9,8 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
 
 ### API
 
+**ListStor** is a `Array`, You can keep the object or everything in it.
+
 ``` JS
 
   // * Create Store
