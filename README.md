@@ -1,2 +1,6 @@
-# stoore
-Object, List Storage for React native use AsyncStorage
+# React Native Store
+
+
+### Install
+
+    yarn install rn-stor
