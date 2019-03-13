@@ -25,6 +25,9 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
   
   // Remove İtem
   list.remove('3b99e3e0-7598-11e8-90be-95472fb3ecbd') // _id
+  
+  // Clear list (Drop)
+  list.drop();
 ```
 
 
