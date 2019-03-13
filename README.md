@@ -46,16 +46,16 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
   config.update({ key: 'value' })
   
   // Get List
-  list.fetch() // { key: 'value' }
+  config.fetch() // { key: 'value' }
   
   // Update 2
   config.update({ key: 'value2' })
   
-  // Get List
-  list.fetch() // { key: 'value2' }
+  // Get config
+  config.fetch() // { key: 'value2' }
   
   // Clear Object (Drop)
-  list.drop();
+  config.drop();
 ```
 
 ### Simple List Example
