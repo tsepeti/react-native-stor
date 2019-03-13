@@ -1,0 +1,11 @@
+{
+  "name": "rn-stor",
+  "version": "0.0.1",
+  "description": "React native using AsyncStorage to create objects, lists.",
+  "main": "index.js",
+  "author": "Tatilsepeti <info@tatilsepeti.com>",
+  "dependencies": {
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2"
+  }
+}
