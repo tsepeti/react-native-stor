@@ -2,6 +2,12 @@
 
 React native using [AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage) to create objects, lists.
 
+## Dependents
+You need to install before the `async-storage`.
+
+    yarn add @react-native-community/async-storage
+    react-native link @react-native-community/async-storage
+
 ### Installation
 
     yarn install rn-stor
@@ -17,7 +23,8 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
   new ListStor(<StoreName>, <Config>);
   
   // example
-  const list = new ListStor('List');
+  import AsyncStorage from '@react-native-community/async-storage';
+  const list = new ListStor('List', { AsyncStorage });
   
   // İnsert
   list.insert({ key: 'value' })
@@ -62,10 +69,11 @@ React native using [AsyncStorage](https://facebook.github.io/react-native/docs/a
 
 ``` JS 
 import React, { Component } from 'react';
+import AsyncStorage from '@react-native-community/async-storage';
 import { ListStor, ObjectStor } from 'rn-stor';
 
 // Stores
-const Messages = new ListStor('Messages', {});
+const Messages = new ListStor('Messages', { AsyncStorage });
 
 // example inserts.
 Messages.insert({ message: 'Hello' });
