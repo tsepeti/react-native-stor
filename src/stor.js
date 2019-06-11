@@ -1,7 +1,5 @@
-import { AsyncStorage } from 'react-native';
-
 export default class Stor {
-  constructor(name, config) {
+  constructor(name, { config }) {
     this.name = name;
     this.config = config;
 
@@ -18,6 +16,7 @@ export default class Stor {
   }
 
   async get() {
+    const { AsyncStorage } = this.config;
     const item = await AsyncStorage.getItem(this.name);
 
     if (item) {
@@ -28,6 +27,7 @@ export default class Stor {
   }
 
   set(doc) {
+    const { AsyncStorage } = this.config;
     return AsyncStorage.setItem(this.name, this.stringify(doc));
   }
 
