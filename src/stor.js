@@ -36,7 +36,11 @@ export default class Stor {
   }
 
   parse(str) {
-    return JSON.parse(str);
+    if (str) {
+      return JSON.parse(str);
+    }
+
+    return null;
   }
 
   stringify(doc) {
