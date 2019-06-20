@@ -1,6 +1,7 @@
 export default class Stor {
-  constructor(name, { config }) {
+  constructor(name, { type, config }) {
     this.name = name;
+    this.type = type;
     this.config = config;
 
     // Store initialize.
@@ -11,7 +12,7 @@ export default class Stor {
     const item = await this.get();
 
     if (!item) {
-      return this.set(this.parse(this.config.type));
+      return this.set(this.parse(this.type));
     }
   }
 
@@ -32,7 +33,7 @@ export default class Stor {
   }
 
   drop() {
-    return this.set(this.parse(this.config.type));
+    return this.set(this.parse(this.type));
   }
 
   parse(str) {
