@@ -1,6 +1,6 @@
 {
   "name": "rn-stor",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React native using AsyncStorage to create objects, lists.",
   "main": "index.js",
   "author": "Tatilsepeti <info@tatilsepeti.com>",
